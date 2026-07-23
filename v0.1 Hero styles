@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --green:#0b2d22;
+    --green-light:#154534;
+    --gold:#C9A227;
+    --cream:#F7F4EC;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#081b15;
+    color:var(--cream);
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.60)),
+    url("https://images.unsplash.com/photo-1592919505780-303950717480?q=80&w=2000&auto=format&fit=crop");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+nav{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:28px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    color:white;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav li{
+
+    color:white;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    max-width:850px;
+
+    padding:20px;
+
+}
+
+.subtitle{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:6px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:92px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:20px;
+
+}
+
+.location{
+
+    line-height:2;
+
+    font-size:18px;
+
+    margin-bottom:45px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    border:2px solid var(--gold);
+
+    color:white;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.button:hover{
+
+    background:var(--gold);
+
+    color:#0b2d22;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+}
