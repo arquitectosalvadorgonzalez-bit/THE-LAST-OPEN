@@ -528,3 +528,66 @@ font-size:22px;
     color:#888;
 
 }
+.rules{
+
+    background:#081b15;
+
+    padding:110px 8%;
+
+    text-align:center;
+
+}
+
+.rules-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.rule-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.3s;
+
+}
+
+.rule-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--gold);
+
+}
+
+.rule-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+.rule-card p{
+
+    color:#d8d8d8;
+
+    line-height:1.7;
+
+}
