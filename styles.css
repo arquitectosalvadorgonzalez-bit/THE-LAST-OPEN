@@ -591,3 +591,39 @@ font-size:22px;
     line-height:1.7;
 
 }
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:100vh;
+        background-position:center;
+        padding:120px 25px 60px;
+    }
+
+    .hero h1{
+        font-size:58px;
+        line-height:.95;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    nav{
+        padding:20px;
+    }
+
+    nav ul{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    section{
+        padding:80px 25px;
+    }
+
+}
