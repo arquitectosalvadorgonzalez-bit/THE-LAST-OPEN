@@ -252,3 +252,84 @@ font-size:22px;
     color:#d7d7d7;
 
 }
+.courses{
+
+    background:#081b15;
+
+    padding:110px 8%;
+
+    text-align:center;
+
+}
+
+.courses h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    margin:20px 0 70px;
+
+}
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:40px;
+
+}
+
+.course-card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#102f25;
+
+    transition:.35s;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.course-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.course-info{
+
+    padding:35px;
+
+}
+
+.course-info h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.course-info p{
+
+    margin-bottom:18px;
+
+    color:#d8d8d8;
+
+}
