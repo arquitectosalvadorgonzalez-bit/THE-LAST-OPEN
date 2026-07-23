@@ -527,28 +527,20 @@ section h2{
         min-height:100svh;
     }
 
-    nav{
+ nav{
 
-        position:relative;
+    display:none;
+}
 
-        flex-direction:column;
+.hero{
 
-        justify-content:center;
+    padding-top:0;
+}
 
-        align-items:center;
+.hero h1{
 
-        gap:18px;
-
-        padding:24px;
-    }
-
-    nav ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:14px;
+    font-size:3.8rem;
+}
     }
 
     .logo{
