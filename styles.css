@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+    --green:#0b2d22;
+    --green2:#143b2d;
+    --gold:#d4af37;
+    --white:#f7f4ec;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--green);
+    color:var(--white);
+    font-family:'Montserrat',sans-serif;
+}
+
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+}
+
+.title{
+    text-align:center;
+    font-size:3rem;
+    color:var(--gold);
+    margin-bottom:50px;
+}
