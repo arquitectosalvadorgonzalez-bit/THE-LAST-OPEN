@@ -426,3 +426,56 @@ font-size:22px;
     line-height:1.6;
 
 }
+.register{
+
+    background:#081b15;
+
+    padding:110px 8%;
+
+    text-align:center;
+
+}
+
+.registration-form{
+
+    max-width:650px;
+
+    margin:60px auto 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.registration-form input{
+
+    background:#102f25;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.registration-form input::placeholder{
+
+    color:#b8b8b8;
+
+}
+
+.registration-form button{
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+}
