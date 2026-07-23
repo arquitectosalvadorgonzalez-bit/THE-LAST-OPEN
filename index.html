@@ -213,3 +213,58 @@
 </body>
 
 </html>
+const api =
+"https://script.google.com/macros/s/AKfycbwWyQ93S6-Mj9L6VtsgrP1aN0VL7drhWjr7rzUVIWJzw6tK5wyhWO7yavkvrrnNs0134Q/exec";
+
+async function loadPlayers() {
+
+    try {
+
+        const response = await fetch(api);
+
+        const players = await response.json();
+
+        document.getElementById("playerCount").textContent =
+            `Registered Players (${players.length})`;
+
+        players.sort((a, b) => {
+
+            const hcA = parseFloat(a.handicap) || 999;
+            const hcB = parseFloat(b.handicap) || 999;
+
+            return hcA - hcB;
+
+        });
+
+        let html = "";
+
+        players.forEach((player, index) => {
+
+            html += `
+                <div class="player-card">
+
+                    <h3>${index + 1}. ${player.nombre}</h3>
+
+                    <p><strong>HC:</strong> ${player.handicap}</p>
+
+                    <p><strong>Course:</strong> ${player.campo}</p>
+
+                </div>
+            `;
+
+        });
+
+        document.getElementById("playersList").innerHTML = html;
+
+    } catch (error) {
+
+        document.getElementById("playerCount").textContent =
+            "Unable to load players.";
+
+        console.error(error);
+
+    }
+
+}
+
+loadPlayers();
