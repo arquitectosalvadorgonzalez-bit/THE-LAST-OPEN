@@ -479,3 +479,52 @@ font-size:22px;
     cursor:pointer;
 
 }
+.footer{
+
+    background:#06130f;
+
+    text-align:center;
+
+    padding:60px 8%;
+
+}
+
+.footer h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:42px;
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    margin-top:12px;
+
+}
+
+.footer-line{
+
+    width:120px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin:30px auto;
+
+}
+
+.footer-copy{
+
+    font-size:14px;
+
+    color:#888;
+
+}
